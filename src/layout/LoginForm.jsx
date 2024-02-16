@@ -32,20 +32,19 @@ export default function LoginForm() {
   }
 
   return (
-    <div className="p-5 border w-4/6 min-w-[500px] mx-auto rounded mt-5 bg-white shadow-md">
-     {/* <div className="text-3xl mb-5">Cinema+</div> */}
-      <div className="text-3xl mb-5">Enter your data</div>
-      <form className="flex flex-col gap-2" onSubmit={hdlSubmit}>
-        <label className="form-control w-full max-w-xs">
-          <div className="label">
-            <span className="text-gray-500">username</span>
-          </div>
+    <div className="p-5 border w-1/3 min-w-[300px] mx-auto rounded-[15px] mt-8 bg-zinc-200 shadow-md">
+      
+      <div className="font-bold text-2xl mb-5 text-center">Enter your data</div>
+
+      <form className="flex flex-col gap-4 items-center" onSubmit={hdlSubmit}>
+        <label className="w-full max-w-xs">
+          <span className="text-gray-500">Email</span>
           <input
             type="text"
             className="input input-bordered w-full max-w-xs"
             name="username"
             value={input.username}
-            onChange={ hdlChange }
+            onChange={hdlChange}
           />
         </label>
 
