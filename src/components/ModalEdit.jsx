@@ -17,7 +17,7 @@ export default function ModalEdit(props) {
     }
     const run = async () => {
       const token = localStorage.getItem('token')
-      const rs = await axios.get('http://localhost:8889/todos/all-status', {
+      const rs = await axios.get('http://localhost:8000/todos/all-status', {
         headers : { Authorization : `Bearer ${token}`}
       })
       localStorage.setItem('status', JSON.stringify(rs.data.status))

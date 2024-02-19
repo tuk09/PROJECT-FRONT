@@ -3,12 +3,12 @@ import useAuth from '../hooks/useAuth';
 
 const guestNav = [
   { to : '/', text: 'Login' },
-  { to : '/sign up', text: 'Sign up' },
+  { to : '/register', text: 'Register' },
 ]
 
 const userNav = [
   { to : '/', text: 'Home' },
-  { to : '/new', text: 'New Todo' },
+
 ]
 
 export default function Header() {
@@ -23,13 +23,10 @@ export default function Header() {
   }
 
   return (
-    <div className="navbar bg-white">
+    <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">The Movie</a> 
-        {/* {user?.id ? user.username : 'Guest'}  */}
-        <a className="btn btn-ghost text-xl">Home </a>
-        <a className="btn btn-ghost text-xl">Movie </a>
-        <a className="btn btn-ghost text-xl">Anime </a>
+        {/* <a className="btn btn-ghost text-xl">Hello, {user?.id ? user.username : 'Guest'}</a> */}
+        
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

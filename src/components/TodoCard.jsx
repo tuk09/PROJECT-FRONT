@@ -10,7 +10,7 @@ export default function TodoCard(props) {
     try {
       e.stopPropagation()
       const token = localStorage.getItem('token')
-      let rs = await axios.delete(`http://localhost:8889/todos/${el.id}`, {
+      let rs = await axios.delete(`http://localhost:8000/todos/${el.id}`, {
         headers : { Authorization : `Bearer ${token}`}
       })
       alert('Delete successful') 
