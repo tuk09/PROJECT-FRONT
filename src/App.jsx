@@ -1,7 +1,7 @@
 import useAuth from "./hooks/useAuth";
 import AppRouter from "./routes/AppRouter";
 import Header from "./layout/Header";
-import UserHome from "./layout/UserHome";
+// import UserHome from "./layout/UserHome";
 
 function App() {
   const {loading} = useAuth()
