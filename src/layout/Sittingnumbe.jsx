@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function sittingnumbe() {
   const [input, setInput] = useState({
@@ -42,7 +43,7 @@ export default function sittingnumbe() {
             onChange={hdlChange}
           />
            <div className="flex gap-5 ">
-          <button type="submit" className=" btn-info mt-10 text-white py-2 px-4 mx-auto rounded-[50px] bg-gray-400 transition duration-300" >ตกลง</button>
+          <Link to="/seats" type="submit" className=" btn-info mt-10 text-white py-2 px-4 mx-auto rounded-[50px] bg-gray-400 transition duration-300" >ตกลง</Link>
         </div>
         </label>
       </form>

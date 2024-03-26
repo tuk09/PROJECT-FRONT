@@ -51,7 +51,7 @@ const Booking = () => {
               <div className="card-actions">
                 <p className="mt-1 flex lg:flex-1 text-lg font-medium text-orange-400">{product.price}</p>
                 <button className="btn" onClick={() => showModal(product)}>แก้ไขรายการ</button>
-                <button className="btn">ลบรายการ</button>
+                <Link to="/Delete" className="btn">ลบรายการ</Link>
                 {selectedEditCart && (
                   <dialog open className="modal">
                     <div className="modal-box max-w-3xl">

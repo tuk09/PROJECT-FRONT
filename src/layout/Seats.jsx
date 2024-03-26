@@ -51,7 +51,7 @@ const seats = () => {
               <Link to="/payment">
                 <button
                   type="submit"
-                  className="btn-info mt-20 text-white px-20 rounded-[50px] bg-red-700 transition duration-300"> Bs 45.00 Continue</button>
+                  className="btn-info mt-20 text-white px-20 rounded-[50px] bg-red-700 transition duration-300"> Bs 80.00 Continue</button>
               </Link>
             </div>
           </a>

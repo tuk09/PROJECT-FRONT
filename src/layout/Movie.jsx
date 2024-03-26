@@ -29,8 +29,8 @@ const movies = [
       },
     {
         id: 1,
-        name: 'Man Suang (2566)',
-        imageSrc: '/src/assets/Man Suang.jpg',
+        name: 'ปราณี (2566)',
+        imageSrc: '/src/assets/ปราณี.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -41,8 +41,8 @@ const movies = [
       },
       {
         id: 3,
-        name: 'ปราณี (2566)',
-        imageSrc: '/src/assets/ปราณี.jpg',
+        name: 'Man Suang (2566)',
+        imageSrc: '/src/assets/Man Suang.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },
       {
