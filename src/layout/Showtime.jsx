@@ -18,14 +18,14 @@ const Sittingnumbe = () => {
     },
   ];
   const tables = [
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
+    { number: 10},
+    { number: 15 },
+    { number: 20},
+    { number: 30},
+    { number: 40 },
+    { number: 50 },
+    { number: 55 },
+    { number: 59 },
   ];
 
   return (

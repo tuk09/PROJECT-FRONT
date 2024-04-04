@@ -19,16 +19,15 @@ const Choose = () => {
   ];
   const tables = [
     { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    { number: 14 },
-    // { number: 14 },
-    // { number: 14 },
-    // { number: 14 },
+    { number: 15 },
+    { number: 16 },
+    { number: 17 },
+    { number: 18 },
+    { number: 19 },
+    { number: 20 },
+    { number: 21 },
+    { number: 22 },
+    { number: 23 },
   ];
 
   return (
@@ -55,7 +54,8 @@ const Choose = () => {
             onClick={() => handleTableSelect(table.number)}
             className={`h-12 bg-gray-400 text-white mx-auto rounded-[10px] shadow-xl mb-24 p-4 text-center ${selectedTable === table.number ? "bg-green-800" : "hover:bg-red-700"}`}
           >
-            <p className="font-bold">Wed dic {table.number}</p>
+            <p className="font-bold"> วันที่ {table.number}</p>
+           
           </Link>
         ))}
         

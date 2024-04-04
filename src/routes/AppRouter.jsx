@@ -18,7 +18,7 @@ import Showtime from '../layout/Showtime'
 import Payment from '../layout/Payment'
 import Qrcode from '../layout/Qrcode'
 import Sittingnumbe from '../layout/Sittingnumbe'
-import Delete from '../layout/Delete'
+
 
 
 
@@ -56,7 +56,7 @@ const userRouter = createBrowserRouter([
       { path: '/payment', element: <Payment/>},
       { path: '/qrcode', element: <Qrcode/>},
       { path: '/sittingnumbe', element: <Sittingnumbe/>},
-      { path: '/Delete', element: <Delete/>}
+      
     ]
   }
 ])
@@ -69,7 +69,7 @@ const adminRouter = createBrowserRouter([
       <Outlet />
     </div>,
     children: [
-      { index: true, element: <AdminMenu /> },
+      { index: true, element: <AdminDashboard /> },
       { path: '/AdminMenu', element: <AdminMenu /> },
       { path: '/AdminDashboard', element: <AdminDashboard to='/' /> },
       { path: '/AdminMovie', element: <AdminMovie to='/' /> },

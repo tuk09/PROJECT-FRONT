@@ -15,7 +15,7 @@ const Booking = () => {
   const carts = [
     {
       id: 1,
-      name: 'Avatar 2: El camino del agua',
+      name: 'Avatar 1: El camino del agua',
       location: "Cinema+",
       date: '14/2567/15:00',
       dubbed: 'Dubbed',
@@ -23,9 +23,9 @@ const Booking = () => {
     },
     {
       id: 2,
-      name: 'Avatar 2: El camino del agua',
+      name: 'Ryman’s 2: El camino del agua',
       location: "Cinema+",
-      date: '14/2567/15:00',
+      date: '20/2567/15:30',
       dubbed: 'Dubbed',
       imageSrc: '/src/assets/Ryman’s.jpg',
     },
@@ -51,7 +51,7 @@ const Booking = () => {
               <div className="card-actions">
                 <p className="mt-1 flex lg:flex-1 text-lg font-medium text-orange-400">{product.price}</p>
                 <button className="btn" onClick={() => showModal(product)}>แก้ไขรายการ</button>
-                <Link to="/Delete" className="btn">ลบรายการ</Link>
+                <Link to="/choose" className="btn">ย้อนกลับ</Link>
                 {selectedEditCart && (
                   <dialog open className="modal">
                     <div className="modal-box max-w-3xl">
@@ -63,6 +63,7 @@ const Booking = () => {
                         <img src={selectedEditCart.imageSrc} alt={selectedEditCart.imageAlt} />
                         <div className="ml-4 flex-1 flex-col">
                           <p>{selectedEditCart.name}</p>
+                          <p>{selectedEditCart.date}</p>
                           <p className="mt-1 flex lg:flex-1 text-lg font-medium text-orange-400">{selectedEditCart.price}</p>
                         </div>
                       </div>
