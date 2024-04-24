@@ -33,6 +33,13 @@ const AdminAnime = () => {
         imageSrc: '/src/assets/พี่นาค.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
       },
+      {
+        id: 4,
+        name: 'หลานม่า',
+        price: '$ 100',
+        imageSrc: '/src/assets/หลานม่า.jpg',
+        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      },
   ];
 
   const [cart, setCart] = useState(initialCart);
